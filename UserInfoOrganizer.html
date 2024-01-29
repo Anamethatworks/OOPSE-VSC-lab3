@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+
+<style>
+
+table.chart {
+    border-collapse: separate;
+}
+table.chart tr:first-child {
+    background: grey;
+}
+table.chart td:first-child {
+    background: yellow;
+}
+table.chart td:last-child {
+    color: #8080ff;
+}
+table.chart tr:last-child {
+    font-weight: bold;
+}
+
+div.funky {
+    width: 500px;
+    background-color: #adadad;
+}
+
+
+</style>
+
+<head>
+
+
+<body>
+
+<p>
+
+
+    <img src={{mustache}} width=500 style="float:left">
+
+    
+    <div class=funky>
+        User Information
+        <br>
+        Username: {{uname}} <br>
+        Real name: {{rname}} <br>
+        Date of Birth: {{dob}} <br>
+        Email: {{email}} <br>
+    </div class=funky>
+
+    
+
+</p>
+
+</body>
+
+</head>
+</html>
