@@ -35,10 +35,10 @@ class Handler(tornado.web.RequestHandler):
         #self.write(f'Real Name: {accountDatabase[uname]["realname"]} \n')
         #self.write(f'Date of Birth: {accountDatabase[uname]["dateOfBirth"]} \n')
         #self.write(f'Email: {accountDatabase[uname]["email"]} \n')
-        mustache = accountDatabase[uname]["picture"]
+        #mustache = accountDatabase[uname]["picture"]
 
         self.render( "UserInfoOrganizer.html", uname = uname, dob = accountDatabase[uname]["dateOfBirth"], 
-                    email = accountDatabase[uname]["email"], rname = accountDatabase[uname]["realname"], mustache = mustache)
+                    email = accountDatabase[uname]["email"], rname = accountDatabase[uname]["realname"], mustache = accountDatabase[uname]["picture"])
 
 
         
